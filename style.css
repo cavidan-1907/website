@@ -63,11 +63,11 @@ h1 {
     background-color: #8c201b; /* Darken the color slightly on hover */
 }
 
-/* Navigation Styles */
+
 nav {
     background-color: transparent;
     padding: 16px 0;
-    position: fixed;
+    position: absolute;
     z-index: 23;
     width: 100%;
 }
@@ -93,7 +93,7 @@ nav {
     color:var(--color1);
     font-weight: bold;
     position: relative;
-    transition: border-bottom 0.3s ease; /* Add transition for the underline */
+    transition: border-bottom 0.3s ease; 
 }
 
 .nav ul li a::after {
@@ -104,21 +104,21 @@ bottom: 0;
     transition: all 0.5s ease;
   width: 0;
   height: 2px;
-  background-color: #8c201b; /* Initially set to transparent */
+  background-color: #8c201b; 
 }
 
 .nav ul li a:hover::after {
 width: 100%;
 }
-/* Yeni eklenen stiller */
+
 .image-container {
     text-align: center;
     margin-bottom: 20px;
 }
 
 .section-image {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bir gölge efekti ekleyin */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
