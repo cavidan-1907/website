@@ -13,7 +13,7 @@
 }
 
 :root {
-    --color1: #ba2b25;
+    --color1:#D43157;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 }
 
 .img img {
-    width: 100px;
+    width: 80px;
 }
 
 .section1 {
@@ -49,19 +49,6 @@ h1 {
     color: #333;
 }
 
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--color1);
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #8c201b;
-}
 
 
 nav {
@@ -104,7 +91,7 @@ bottom: 0;
     transition: all 0.5s ease;
   width: 0;
   height: 2px;
-  background-color: #8c201b; 
+  background-color:var(--color1); 
 }
 
 .nav ul li a:hover::after {

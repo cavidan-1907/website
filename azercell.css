@@ -13,7 +13,7 @@
 }
 
 :root {
-    --color1: #ba2b25;
+    --color1:#5C2483;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 }
 
 .img img {
-    width: 100px;
+    width: 50px;
 }
 
 .section1 {
@@ -95,7 +95,6 @@ nav {
     position: relative;
     transition: border-bottom 0.3s ease; 
 }
-
 .nav ul li a::after {
     content: '';
     position: absolute;
@@ -104,7 +103,7 @@ bottom: 0;
     transition: all 0.5s ease;
   width: 0;
   height: 2px;
-  background-color: #8c201b; 
+  background-color:var(--color1); 
 }
 
 .nav ul li a:hover::after {
