@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+
+:root {
+    --color1: #ba2b25;
+}
+
+h1 {
+    color: var(--color1);
+}
+
+.img img {
+    width: 100px;
+}
+
+.section1 {
+    background-image: url(./Untitled.jpeg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top:80px;
+}
+
+.section1 h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.section1 p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color1);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #8c201b; /* Darken the color slightly on hover */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: transparent;
+    padding: 16px 0;
+    position: fixed;
+    z-index: 23;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color:var(--color1);
+    font-weight: bold;
+    position: relative;
+    transition: border-bottom 0.3s ease; /* Add transition for the underline */
+}
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+bottom: 0;
+    transition: all 0.5s ease;
+  width: 0;
+  height: 2px;
+  background-color: #8c201b; /* Initially set to transparent */
+}
+
+.nav ul li a:hover::after {
+width: 100%;
+}
+/* Yeni eklenen stiller */
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bir gölge efekti ekleyin */
+}
